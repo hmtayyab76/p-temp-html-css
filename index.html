@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="assest/product-hunt.svg">
+    <link rel="stylesheet" href="App.css">
+    <script defer src="App.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav
+        class="sticky w-full z-20 nav-bg opacity text-white top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#123" class="flex items-center">
+                <i class="fa-brands fa-product-hunt text-3xl pr-1"></i>
+                <span class="self-center text-2xl mb-1 font-semibold whitespace-nowrap dark:text-white">
+                    ortfolio
+                </span>
+            </a>
+            <div class="flex md:order-2">
+                <a href="https://github.com/hmtayyab76" class="p-2 text-center">
+                    <i class="fa-brands fa-github text-2xl text-white hover:text-orange-600"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hafiz-muhammad-tayyab-037352248/" class="p-2 text-center">
+                    <i class="fa-brands fa-linkedin text-2xl text-white hover:text-orange-600"></i>
+                </a>
+                <a href="https://twitter.com/hmtayyab76" class="p-2 text-center">
+                    <i class="fa-brands fa-twitter text-2xl text-white hover:text-orange-600"></i>
+                </a>
+                <div onclick="navLinksDisplay()" class="inline-flex items-center md:hidden  focus:outline-none">
+                    <i class="fa-brands fa-elementor text-2xl text-white hover:text-orange-600"></i>
+                </div>
+            </div>
+            <div class="items-center justify-between sm:flex-col hidden w-full md:flex md:w-auto md:order-1"
+                id="navbar-sticky">
+                <ul id="NavLinks-1"
+                    class="flex p-2 md:p-0 mt-1 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li>
+                        <a href="#aboutus"
+                            class="block py-2 pl-3 pr-4 text-slate-200 rounded md:p-0 hover:text-orange-600"
+                            aria-current="page">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="block py-2 pl-3 pr-4 text-slate-200 rounded md:p-0 hover:text-orange-600">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                            class="block py-2 pl-3 pr-4 text-slate-200 rounded md:p-0 hover:text-orange-600">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section  -->
+    <section>
+        <div
+            class="h-full max-w-screen-xl px-5 mx-auto flex flex-col md:flex-row justify-between my-6 items-center py-12 md:py-14">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl animated-text-1">
+                    <span class="txt-1">Hello, I'm</span>
+                </h1>
+                <p class="text-2xl py-4 sm:text-4xl md:text-5xl animated-text-2">
+                    <span class="text-white" style="font-family: 'Lobster', cursive">
+                        Hafiz Muhammad Tayyab
+                    </span>
+                </p>
+                <p class="text-2xl sm:text-3xl md:text-4xl text-slate-400 animated-text-2"
+                    style="font-family: 'Lobster', cursive">
+                    Front-End Developer
+                </p>
+            </div>
+            <div class="profile-img-div p-5 md:p-0 w-60 md:w-80 drop-shadow-1xl hover:drop-shadow-2xl">
+                <img src="assest/profile.jpg" class="profile-img" alt="Profile Pic" />
+            </div>
+        </div>
+        <div id="aboutus"
+            class="about-me flex flex-col md:flex-row justify-around py-0 md:py-14 items-center max-w-screen-xl mx-auto">
+            <div class="w-full md:w-2/4 p-7">
+                <img alt="About Me" src="assest/about-me.svg"></img>
+            </div>
+            <div class="w-full md:w-3/4 p-7">
+                <h1 class="text-3xl md:text-4xl font-bold">
+                    <span class="txt-1">About me</span>
+                </h1>
+                <p class="py-4 text-2xl md:text-3xl">Get to know</p>
+                <p class="text-lg md:text-1xl text-justify text-slate-300">
+                    "I'm <span class="clr-3">Hafiz Muhammad Tayyab,</span> a Software Engineer who embarked on my
+                    journey in website design and development in 2021. Over the past two years, I have gained valuable
+                    experience in creating clean, elegant, and user-friendly websites for clients around the world. My
+                    skill set includes proficiency in <span class="clr-3">HTML, CSS, JavaScript, React JS</span> and
+                    various web frameworks, and I am always eager to learn new technologies to enhance my work. I take
+                    pride in delivering high-quality output that exceeds clients' expectations, and I am always happy to
+                    assist with website changes, content updates, bug fixes, and design modifications. If you are
+                    seeking a passionate and experienced web developer who can bring your ideas to life."
+                </p>
+                <div class="mt-5">
+                    <a href="123" class="button">Find More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <div id="projects" class="max-w-screen-xl mx-auto p-4">
+        <div class="w-full my-10 text-4xl sm:text-5xl font-bold text-orange-600">
+            My Projects
+        </div>
+        <div id="project" class="flex flex-wrap justify-around max-w-screen-xl div-bg items-center mx-auto p-4"></div>
+    </div>
+    <!-- Contact -->
+    <div id="contact"
+        class="about-me flex flex-col md:flex-row justify-around py-0 md:py-14 items-center max-w-screen-xl mx-auto">
+        <div class="max-w-md md:w-2/4 mx-auto my-8 bg-light-accent p-10 rounded-md shadow-sm div-bg">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">
+                    <span class="ctxt-1">Contact</span>
+                </h1>
+                <p class="text-gray-700 mb-6 font-bold">
+                    Fill up the form below to send a message.
+                </p>
+                <form class="w-full max-w-lg">
+                    <div class="flex flex-wrap mb-6">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">
+                            Your Name <span>*</span>
+                        </label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="flex flex-wrap mb-6 ">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">
+                            Your Email <span>*</span>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required
+                            class="appearance-none border valid:border-orange-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="flex flex-wrap mb-6">
+                        <label for="number" class="block text-gray-700 font-bold mb-2">
+                            Phone Number
+                        </label>
+                        <input type="number" id="number" name="number" placeholder="+92-XZY-YYYYYYY"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="flex flex-wrap mb-6">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="button w-full "><button type="submit" class="w-full">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="w-full md:w-2/5 p-7">
+            <img alt="About Me" src="assest/letter.svg"></img>
+        </div>
+    </div>
+    <!-- Connects -->
+    <div class="max-w-screen-xl mx-auto my-10 p-4 div-bg">
+        <h1 class="text-4xl sm:text-5xl text-white ">Let's Connect</h1>
+        <p class=" text-3xl sm:text-4xl my-5 text-white ">My Social</p>
+        <div class="flex flex-wrap justify-around items-center my-5 sm:my-10">
+
+            <a href="https://t.me/hmtayyab76"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>Telegram</p>
+                <i class="fa-brands fa-telegram text-2xl text-white"></i>
+            </a>
+            <a href="https://github.com/hmtayyab76"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>GitHub</p>
+                <i class="fa-brands fa-github text-2xl text-white"></i>
+            </a>
+            <a href=" https://www.fiverr.com/hmtayyab76"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>Fiverr</p>
+                <i class=" text-2xl text-white">fi</i>
+            </a>
+            <a href="https://www.linkedin.com/in/hafiz-muhammad-tayyab-037352248/"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>LinkedIn</p>
+                <i class="fa-brands fa-linkedin text-2xl text-white"></i>
+            </a>
+            <a href="mailto:hmtayyab76@gmail.com"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>E-Mail</p>
+                <i class="fa-brands fa-nfc-symbol text-2xl text-white"></i>
+            </a>
+            <a href="https://twitter.com/hmtayyab76"
+                class="button flex justify-between items-center mx-2 my-5 py-3 px-5 w-36 sm:w-72 md:w-80">
+                <p>Twitter</p>
+                <i class="fa-brands fa-twitter text-2xl text-white"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <p class="text-lg text-center mb-4">Email: <a href="mailto:hmtayyab76@gmail.com"
+                        class="hover:text-orange-600">hmtayyab76@gmail.com</a></p>
+                <p class=" text-lg text-center mb-4 ">Phone: <span class="hover:text-orange-600">+92-3247271040</span>
+                </p>
+            </div>
+            <div class="flex justify-center items-center mb-6">
+                <a href="https://github.com/hmtayyab76" class="text-gray-400 hover:text-white mx-4 text-2xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white mx-4 text-2xl">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/hmtayyab76" class="text-gray-400 hover:text-white mx-4 text-2xl">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+            </div>
+            <p class="text-gray-400 text-center mb-4">© 2023 Hafiz Muhammad Tayyab. All rights reserved.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
