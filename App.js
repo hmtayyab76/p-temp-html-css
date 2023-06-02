@@ -5,15 +5,15 @@ function navLinksDisplay() {
 }
 
 function SingleProject(title, image, languages, description, link) {
-  return `<section class="w-50 flex justify-around flex-col p-5 mx-2 my-4 border-solid border-2 border-white rounded-lg overflow-hidden shadow-lg bord" style="width: 450px;">
-          <img src="${image}" alt="${title}" class="h-48 w-full object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1" />
+  return `<section class="w-50 flex justify-around flex-col p-5 mx-2 my-4 border-solid border-2 border-white rounded-lg overflow-hidden shadow-lg bord" style="width: 400px;">
+          <img src="${image}" alt="${title}" class="h-48 w-full bg-contain  object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1" />
           <div class="m-1">
-            <h5 class="text-2xl font-bold text-white my-1">${title}</h5>
+            <h5 class="text-2xl font-bold text-white mb-1 mt-2">${title}</h5>
             <div class="description-container mb-1 overflow-hidden">
-              <p class="text-1/2xl sm:text-1xl text-gray-400 m-1">${description}</p>
+              <p class="text-1xl  text-gray-400 m-1">${description}</p>
             </div>
-            <p class="text-3xl my-1 text-white">Stack</p>
-            <p class="text-2xl my-2 text-slate-200 pl-1">${languages}</p>
+            <p class="text-2xl mb-1 text-white">Stack</p>
+            <p class="text-1xl font-bold my-2 text-slate-200 pl-1">${languages}</p>
           </div>
           <div class="flex justify-around mt-2">
             <button class="button">Visit</button>
@@ -39,6 +39,22 @@ function Projects() {
       link: "https://github.com/hmtayyab76/AnimatedProject",
       description:
         "Creating the front-end of a shopping website with React JS and other technologies involves using a variety of tools and techniques to build an engaging user experience. Creating a successful shopping website requires careful consideration of user needs and preferences, as well as attention to performance, accessibility",
+    },
+    {
+      title: "Eduprix",
+      image: "assest/Screenshot 2023-06-02 185731.png",
+      languages: "HTML || CSS || Bootstrap",
+      link: "https://github.com/hmtayyab76/AnimatedProject",
+      description:
+        "Explore Eduprix is a dynamic and user-friendly website that serves as a one-stop destination for knowledge exploration across various fields. Developed using HTML, CSS, and Bootstrap, this website offers a seamless browsing experience and provides valuable resources and insights on diverse subjects.",
+    },
+    {
+      title: "Chat Box",
+      image: "assest/chatbox.png",
+      languages: "HTML || CSS || JavaScript",
+      link: "#123",
+      description:
+        "The Interactive Chat Box UI is a sleek and user-friendly interface that allows seamless communication between users in an engaging and visually appealing way. Developed using HTML, CSS, and JavaScript, this chat box UI offers a seamless user experience, making it perfect for various applications, including websites, mobile apps, and customer support platforms.",
     },
   ];
 
