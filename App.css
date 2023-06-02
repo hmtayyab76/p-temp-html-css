@@ -30,7 +30,7 @@ body {
 }
 .txt-1 {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 700;
 }
 .txt-2 {
   color: var(--text-base);
