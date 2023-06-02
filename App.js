@@ -38,34 +38,6 @@ function Projects() {
       description:
         "Creating the front-end of a shopping website with React JS and other technologies involves using a variety of tools and techniques to build an engaging user experience. Creating a successful shopping website requires careful consideration of user needs and preferences, as well as attention to performance, accessibility",
     },
-    {
-      title: "QuickCart",
-      image: "assest/p1.png",
-      languages: "#JavaScript || #React",
-      description:
-        "The front-end of an add-to-cart project with payment integration using React would typically involve creating a user-friendly interface that allows users to add items to their cart and checkout using various payment methods. This would require creating a shopping cart component that displays items in the cart, calculates the total cost, and provides options for removing or modifying items",
-    },
-    {
-      title: "ShopEZ",
-      image: "assest/p2.png",
-      languages: "#JavaScript || #React",
-      description:
-        "Creating the front-end of a shopping website with React JS and other technologies involves using a variety of tools and techniques to build an engaging user experience. Creating a successful shopping website requires careful consideration of user needs and preferences, as well as attention to performance, accessibility",
-    },
-    {
-      title: "QuickCart",
-      image: "assest/p1.png",
-      languages: "#JavaScript || #React",
-      description:
-        "The front-end of an add-to-cart project with payment integration using React would typically involve creating a user-friendly interface that allows users to add items to their cart and checkout using various payment methods. This would require creating a shopping cart component that displays items in the cart, calculates the total cost, and provides options for removing or modifying items",
-    },
-    {
-      title: "ShopEZ",
-      image: "assest/p2.png",
-      languages: "#JavaScript || #React",
-      description:
-        "Creating the front-end of a shopping website with React JS and other technologies involves using a variety of tools and techniques to build an engaging user experience. Creating a successful shopping website requires careful consideration of user needs and preferences, as well as attention to performance, accessibility",
-    },
   ];
 
   const projectElement = document.getElementById("project");
