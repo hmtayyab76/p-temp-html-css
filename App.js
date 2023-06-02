@@ -4,7 +4,7 @@ function navLinksDisplay() {
   navLinks.style.display = navLinks.style.display === "none" ? "flex" : "none";
 }
 
-function SingleProject(title, image, languages, description) {
+function SingleProject(title, image, languages, description, link) {
   return `<section class="w-50 flex justify-around flex-col p-5 mx-2 my-4 border-solid border-2 border-white rounded-lg overflow-hidden shadow-lg bord" style="width: 450px;">
           <img src="${image}" alt="${title}" class="h-48 w-full object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1" />
           <div class="m-1">
@@ -17,7 +17,7 @@ function SingleProject(title, image, languages, description) {
           </div>
           <div class="flex justify-around mt-2">
             <button class="button">Visit</button>
-            <button class="button">Code</button>
+            <button class="button"><a href="${link}">Code</button>
           </div>
         </section>`;
 }
@@ -28,6 +28,7 @@ function Projects() {
       title: "QuickCart",
       image: "assest/p1.png",
       languages: "#JavaScript || #React",
+      link: "https://github.com/hmtayyab76/DashBoard",
       description:
         "The front-end of an add-to-cart project with payment integration using React would typically involve creating a user-friendly interface that allows users to add items to their cart and checkout using various payment methods. This would require creating a shopping cart component that displays items in the cart, calculates the total cost, and provides options for removing or modifying items",
     },
@@ -35,6 +36,7 @@ function Projects() {
       title: "ShopEZ",
       image: "assest/p2.png",
       languages: "#JavaScript || #React",
+      link: "https://github.com/hmtayyab76/AnimatedProject",
       description:
         "Creating the front-end of a shopping website with React JS and other technologies involves using a variety of tools and techniques to build an engaging user experience. Creating a successful shopping website requires careful consideration of user needs and preferences, as well as attention to performance, accessibility",
     },
@@ -43,8 +45,8 @@ function Projects() {
   const projectElement = document.getElementById("project");
 
   const projectsHTML = projectsData.map((projectData) => {
-    const { title, image, languages, description } = projectData;
-    return SingleProject(title, image, languages, description);
+    const { title, image, languages, description, link } = projectData;
+    return SingleProject(title, image, languages, description, link);
   });
 
   projectElement.innerHTML = projectsHTML.join("");
