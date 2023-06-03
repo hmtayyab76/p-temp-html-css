@@ -17,6 +17,34 @@
 </head>
 
 <body>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve form data
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $number = $_POST["number"];
+        $message = $_POST["message"];
+    
+        // Create email body
+        $email_body = "Name: $name\n";
+        $email_body .= "Email: $email\n";
+        $email_body .= "Phone Number: $number\n";
+        $email_body .= "Message: $message\n";
+    
+        // Send the email
+        $to = "hmtayyab76@gmail.com";
+        $subject = "New Message from Website";
+        $headers = "From: $email";
+    
+        if (mail($to, $subject, $email_body, $headers)) {
+            echo "Message sent successfully!";
+        } else {
+            echo "Error sending message.";
+        }
+    }
+    ?>
+
+
     <!-- Nav Bar -->
     <nav
         class="sticky w-full z-20 nav-bg opacity text-white top-0 left-0 border-b border-gray-200 dark:border-gray-600">
@@ -69,9 +97,6 @@
             </div>
         </div>
     </nav>
-    <a href="#">
-        <i class="fa-brands fa-product-hunt fixed hover:text-white text-gray-400 right-10 bottom-10 text-3xl pr-1"></i>
-    </a>
     <!-- About Section  -->
     <section>
         <div
@@ -108,7 +133,8 @@
                     "I'm <span class="clr-3">Hafiz Muhammad Tayyab,</span> a Software Engineer who embarked on my
                     journey in website design and development in 2021. Over the past two years, I have gained valuable
                     experience in creating clean, elegant, and user-friendly websites for clients around the world. My
-                    skill set includes proficiency in <span class="clr-3">HTML, CSS, JavaScript, React JS</span> and
+                    skill set includes proficiency in <span class="clr-3">HTML, CSS, Bootstrap, Tailwind CSS,
+                        JavaScript, React JS, React Core UI</span> and
                     various web frameworks, and I am always eager to learn new technologies to enhance my work. I take
                     pride in delivering high-quality output that exceeds clients' expectations, and I am always happy to
                     assist with website changes, content updates, bug fixes, and design modifications. If you are
@@ -138,7 +164,8 @@
                 <p class="text-gray-700 mb-6 font-bold">
                     Fill up the form below to send a message.
                 </p>
-                <form class="w-full max-w-lg">
+
+                <form class="w-full max-w-lg" method="POST" action="process-form.php">
                     <div class="flex flex-wrap mb-6">
                         <label for="name" class="block text-gray-700 font-bold mb-2">
                             Your Name <span>*</span>
