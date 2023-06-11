@@ -119,3 +119,23 @@ body {
   font-weight: bold;
   border: none;
 }
+.skill {
+  padding: 20px;
+  /* font-size: 24px; */
+  color: #f9f9f9;
+  height: auto;
+  width: 450px;
+  border-radius: 10px;
+  margin: 20px 10px;
+  border: 1px solid #fff;
+}
+.fas {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #f58a07;
+  align-items: center;
+}
+.skill li {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}

@@ -17,34 +17,6 @@
 </head>
 
 <body>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Retrieve form data
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $number = $_POST["number"];
-        $message = $_POST["message"];
-    
-        // Create email body
-        $email_body = "Name: $name\n";
-        $email_body .= "Email: $email\n";
-        $email_body .= "Phone Number: $number\n";
-        $email_body .= "Message: $message\n";
-    
-        // Send the email
-        $to = "hmtayyab76@gmail.com";
-        $subject = "New Message from Website";
-        $headers = "From: $email";
-    
-        if (mail($to, $subject, $email_body, $headers)) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Error sending message.";
-        }
-    }
-    ?>
-
-
     <!-- Nav Bar -->
     <nav
         class="sticky w-full z-20 nav-bg opacity text-white top-0 left-0 border-b border-gray-200 dark:border-gray-600">
@@ -146,6 +118,46 @@
             </div>
         </div>
     </section>
+    <!-- My Skills -->
+    <div class="max-w-screen-xl mx-auto my-10 p-4 div-bg rounded-sm">
+        <h1 class="text-4xl sm:text-5xl txt-1">My Skills</h1>
+        <div class="flex flex-wrap justify-around items-center my-5 sm:my-10">
+            <div class="skill">
+                <p class="text-2xl my-4"><i class="fas fa-desktop"></i> Web Tools</p>
+                <li>HTML5, CSS, JavaScript</li>
+                <li>Tailwind CSS, Bootstrap</li>
+                <li>React js, TypeScript</li>
+                <li>CoreUi, MaterialUi (mui)</li>
+            </div>
+            <div class="skill">
+                <p class="text-2xl my-4 "><i class="fas fa-code"></i> Web Development</p>
+                <li> Front-end development using different Web Tools</li>
+                <li> Experience with popular frameworks
+                </li>
+                <li> Responsive web design and mobile optimization</li>
+                <li> Familiarity with version control systems (Git)</li>
+            </div>
+            <div class="skill">
+                <p class="text-2xl my-4"><i class="fas fa-cogs"></i> Problem-solving</p>
+                <li> Analytical thinking and logical reasoning</li>
+                <li> Identifying and troubleshooting technical issues</li>
+                <li> Creative problem-solving for UX/UI challenges</li>
+                <li> Data-driven decision-making and analysis</li>
+            </div>
+            <div class="skill">
+
+                <p class="text-2xl my-4"><i class="fas fa-tasks"></i> Project Management</p>
+                <li> Defining project scope, goals, and deliverables</li>
+                <li> Managing timelines, resources, and budgets</li>
+                <li> Effective communication and collaboration with teams</li>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-around items-center my-5 sm:my-10">
+    </div>
+
     <!-- Projects -->
     <div id="projects" class="max-w-screen-xl mx-auto p-4">
         <div class="w-full my-5 sm:my-10 text-4xl sm:text-5xl txt-1">
